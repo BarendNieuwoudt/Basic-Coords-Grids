@@ -34,3 +34,6 @@ class BasicCoordinate:
 		diffX = (self.getX() - coordinate.getX())
 		diffY = (self.getY() - coordinate.getY())
 		return abs(round(math.sqrt(math.pow(diffX, 2) + math.pow(diffY, 2)), 1))
+		
+	def equals(self, coordinate):
+		return self.x == coordinate.getX() and self.y == coordinate.getY()
