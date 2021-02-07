@@ -37,3 +37,6 @@ class BasicCoordinate:
 		
 	def equals(self, coordinate):
 		return self.x == coordinate.getX() and self.y == coordinate.getY()
+		
+	def __str__(self):
+		return str(self.x) + ' ' + str(self.y)
